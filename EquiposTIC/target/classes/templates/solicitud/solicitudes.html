@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LISTADO DE SOLICITUDES REALIZADAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    <div class="container-fluid">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a style="color: cyan" class="nav-link" href="/solicitudes">LISTADO DE SOLICITUDES</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: yellow" class="nav-link" href="/solicitud/form">SOLICITUD DE EQUIPOS TIC</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: red" class="nav-link" href="/">REGRESAR AL INICIO</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container mt-3">
+    <h2>Personas</h2>
+    <a href="/solicitud/form" class="btn btn-primary">NUEVO</a>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>NÚMERO DE CODIGO</th>
+            <th>CODIGO</th>
+            <th>NOMBRE DEL FUNCIONARIO</th>
+            <th>DIRECCION/UNIDAD</th>
+            <th>E-MAIL</th>
+            <th>TIPO DE REGISTRO</th>
+            <th>FECHA</th>
+            <th>TIPO DE EQUIPO</th>
+            <th>SISTEMA OPERATIVO</th>
+            <th>PROCESADOR</th>
+            <th>TIPO DE DISCO</th>
+            <th>RAM</th>
+            <th>CAPACIDAD DE DISCO</th>
+            <th>MARCA DE DISCO DURO/SSD</th>
+            <th>MODELO DISCO DURO/SSD</th>
+            <th>SERIE DISCO DURO/SSD</th>
+            <th>ESTADO DISCO DURO/SSD</th>
+            <th>OBSERVACIONES DISCO DURO/SSD</th>
+            <th>MARCA CASE</th>
+            <th>MODELO CASE</th>
+            <th>SERIE CASE</th>
+            <th>ESTADO CASE</th>
+            <th>OBSERVACIONES CASE</th>
+            <th>MARCA MONITOR</th>
+            <th>MODELO MONITOR</th>
+            <th>SERIE MONITOR</th>
+            <th>ESTADO MONITOR</th>
+            <th>OBSERVACIONES MONITOR</th>
+            <th>MARCA TECLADO</th>
+            <th>MODELO TECLADO</th>
+            <th>SERIE TECLADO</th>
+            <th>ESTADO TECLADO</th>
+            <th>OBSERVACIONES TECLADO</th>
+            <th>MARCA MOUSE</th>
+            <th>MODELO MOUSE</th>
+            <th>SERIE MOUSE</th>
+            <th>ESTADO MOUSE</th>
+            <th>OBSERVACIONES MOUSE</th>
+            <th>MARCA UPS</th>
+            <th>MODELO UPS</th>
+            <th>SERIE UPS</th>
+            <th>ESTADO UPS</th>
+            <th>OBSERVACIONES UPS</th>
+            <th>MARCA PARLANTES</th>
+            <th>MODELO PARLANTES</th>
+            <th>SERIE PARLANTES</th>
+            <th>ESTADO PARLANTES</th>
+            <th>OBSERVACIONES PARLANTES</th>
+            <th>MARCA MEMORIA RAM</th>
+            <th>MODELO MEMORIA RAM</th>
+            <th>SERIE MEMORIA RAM</th>
+            <th>ESTADO MEMORIA RAM</th>
+            <th>OBSERVACIONES MEMORIA RAM</th>
+            <th>MARCA CAMARA</th>
+            <th>MODELO CAMARA</th>
+            <th>SERIE CAMARA</th>
+            <th>ESTADO CAMARA</th>
+            <th>OBSERVACIONES CAMARA</th>
+            <th>MARCA BATERIA</th>
+            <th>MODELO BATERIA</th>
+            <th>SERIE BATERIA</th>
+            <th>ESTADO BATERIA</th>
+            <th>OBSERVACIONES BATERIA</th>
+            <th>MARCA CARAGADOR PORTATIL</th>
+            <th>MODELO CARGADOR PORTATIL</th>
+            <th>SERIE CARGADOR PORTATIL</th>
+            <th>ESTADO CARGADOR PORTATIL</th>
+            <th>OBSERVACIONES CARGADOR PORTATIL</th>
+            <th>MARCA MICRÓFONO</th>
+            <th>MODELO MICRÓFONO</th>
+            <th>SERIE MICRÓFONO</th>
+            <th>ESTADO MICRÓFONO</th>
+            <th>OBSERVACIONES MICRÓFONO</th>
+            <th>MARCA TARJETA RED</th>
+            <th>MODELO TARJETA RED</th>
+            <th>SERIE TARJETA RED</th>
+            <th>ESTADO TARJETA RED</th>
+            <th>OBSERVACIONES TARJETA RED</th>
+            <th>FUNCIONA CABLE DE ENERGIA DE MONITOR</th>
+            <th>OBSERVACIONES CABLE DE ENERGIA DE MONITOR</th>
+            <th>FUNCIONA TOUCHPAD</th>
+            <th>OBSERVACIONES TOUCHPAD</th>
+            <th>FUNCIONA LECTOR CD/DVD</th>
+            <th>OBSERVACIONES LECTOR CD/DVD</th>
+            <th>FUNCIONA LECTOR DE TARJETAS</th>
+            <th>OBSERVACIONES LECTOR DE TARJETAS</th>
+            <th>FUNCIONA PUERTO ETHERNET</th>
+            <th>OBSERVACIONES PUERTO ETHERNET</th>
+            <th>FUNCIONA PUERTO HDMI</th>
+            <th>OBSERVACIONES PUERTO HDMI</th>
+            <th>FUNCIONA PUERTO VGA</th>
+            <th>OBSERVACIONES PUERTO VGA</th>
+            <th>FUNCIONA INDICADORES LUMINOSOS</th>
+            <th>OBSERVACIONES INDICADORES LUMINOSOS</th>
+            <th>FUNCIONA SALIDA DE AUDIO</th>
+            <th>OBSERVACIONES SALIDA DE AUDIO</th>
+            <th>FUNCIONA WIFI</th>
+            <th>OBSERVACIONES WIFI</th>
+            <th>MANTENIMIENTO REALIZADO/REALIZAR</th>
+            <th>REVISADO POR</th>
+            <th>CARGO</th>
+            <th>RECIBIDO POR</th>
+            <th>CARGO</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="solicitud : ${solicitudes}">
+            <td th:text="${solicitud.numeroCodigo}"></td>
+            <td th:text="${solicitud.codigo}"></td>
+            <td th:text="${solicitud.persona.nombre}"></td>
+            <td th:text="${solicitud.direccion}"></td>
+            <td th:text="${solicitud.email}"></td>
+            <td th:text="${solicitud.tipoRegistro}"></td>
+            <td th:text="${solicitud.fecha}"></td>
+            <td th:text="${solicitud.tipoEquipo}"></td>
+            <td th:text="${solicitud.sistemaOperativo}"></td>
+            <td th:text="${solicitud.procesador}"></td>
+            <td th:text="${solicitud.tipoDisco}"></td>
+            <td th:text="${solicitud.ram}"></td>
+            <td th:text="${solicitud.capacidadDisco}"></td>
+            <td th:text="${solicitud.marcaDiscoDuro}"></td>
+            <td th:text="${solicitud.modeloDiscoDuro}"></td>
+            <td th:text="${solicitud.serieDiscoDuro}"></td>
+            <td th:text="${solicitud.estadoDiscoDuro}"></td>
+            <td th:text="${solicitud.observacionDiscoDuro}"></td>
+            <td th:text="${solicitud.marcaCase}"></td>
+            <td th:text="${solicitud.modeloCase}"></td>
+            <td th:text="${solicitud.serieCase}"></td>
+            <td th:text="${solicitud.estadoCase}"></td>
+            <td th:text="${solicitud.observacionCase}"></td>
+            <td th:text="${solicitud.marcaMonitor}"></td>
+            <td th:text="${solicitud.modeloMonitor}"></td>
+            <td th:text="${solicitud.serieMonitor}"></td>
+            <td th:text="${solicitud.estadoMonitor}"></td>
+            <td th:text="${solicitud.observacionMonitor}"></td>
+            <td th:text="${solicitud.marcaTeclado}"></td>
+            <td th:text="${solicitud.modeloTeclado}"></td>
+            <td th:text="${solicitud.serieTeclado}"></td>
+            <td th:text="${solicitud.estadoTeclado}"></td>
+            <td th:text="${solicitud.observacionTeclado}"></td>
+            <td th:text="${solicitud.marcaMouse}"></td>
+            <td th:text="${solicitud.modeloMouse}"></td>
+            <td th:text="${solicitud.serieMouse}"></td>
+            <td th:text="${solicitud.estadoMouse}"></td>
+            <td th:text="${solicitud.observacionMouse}"></td>
+            <td th:text="${solicitud.marcaUPS}"></td>
+            <td th:text="${solicitud.modeloUPS}"></td>
+            <td th:text="${solicitud.serieUPS}"></td>
+            <td th:text="${solicitud.estadoUPS}"></td>
+            <td th:text="${solicitud.observacionUPS}"></td>
+            <td th:text="${solicitud.marcaParlantes}"></td>
+            <td th:text="${solicitud.modeloParlantes}"></td>
+            <td th:text="${solicitud.serieParlantes}"></td>
+            <td th:text="${solicitud.estadoParlantes}"></td>
+            <td th:text="${solicitud.observacionParlantes}"></td>
+            <td th:text="${solicitud.marcaMemoriaRam}"></td>
+            <td th:text="${solicitud.modeloMemoriaRam}"></td>
+            <td th:text="${solicitud.serieMemoriaRam}"></td>
+            <td th:text="${solicitud.estadoMemoriaRam}"></td>
+            <td th:text="${solicitud.observacionMemoriaRam}"></td>
+            <td th:text="${solicitud.marcaCamara}"></td>
+            <td th:text="${solicitud.modeloCamara}"></td>
+            <td th:text="${solicitud.serieCamara}"></td>
+            <td th:text="${solicitud.estadoCamara}"></td>
+            <td th:text="${solicitud.observacionCamara}"></td>
+            <td th:text="${solicitud.marcaBateria}"></td>
+            <td th:text="${solicitud.modeloBateria}"></td>
+            <td th:text="${solicitud.serieBateria}"></td>
+            <td th:text="${solicitud.estadoBateria}"></td>
+            <td th:text="${solicitud.observacionBateria}"></td>
+            <td th:text="${solicitud.marcaCargadorPortatil}"></td>
+            <td th:text="${solicitud.modeloCargadorPortatil}"></td>
+            <td th:text="${solicitud.serieCargadorPortatil}"></td>
+            <td th:text="${solicitud.estadoCargadorPortatil}"></td>
+            <td th:text="${solicitud.observacionCargadorPortatil}"></td>
+            <td th:text="${solicitud.marcaMicrofono}"></td>
+            <td th:text="${solicitud.modeloMicrofono}"></td>
+            <td th:text="${solicitud.serieMicrofono}"></td>
+            <td th:text="${solicitud.estadoMicrofono}"></td>
+            <td th:text="${solicitud.observacionMicrofono}"></td>
+            <td th:text="${solicitud.marcaTarjetaRed}"></td>
+            <td th:text="${solicitud.modeloTarjetaRed}"></td>
+            <td th:text="${solicitud.serieTarjetaRed}"></td>
+            <td th:text="${solicitud.estadoTarjetaRed}"></td>
+            <td th:text="${solicitud.observacionTarjetaRed}"></td>
+            <td th:text="${solicitud.funcionaCableEnergia}"></td>
+            <td th:text="${solicitud.observacionCableEnergia}"></td>
+            <td th:text="${solicitud.funcionaTouchpad}"></td>
+            <td th:text="${solicitud.observacionTouchpad}"></td>
+            <td th:text="${solicitud.funcionaLector}"></td>
+            <td th:text="${solicitud.observacionLector}"></td>
+            <td th:text="${solicitud.funcionaLectorTarjetas}"></td>
+            <td th:text="${solicitud.observacionLectorTarjetas}"></td>
+            <td th:text="${solicitud.funcionaPuertoEthernet}"></td>
+            <td th:text="${solicitud.observacionPuertoEthernet}"></td>
+            <td th:text="${solicitud.funcionaPuertoHDMI}"></td>
+            <td th:text="${solicitud.observacionPuertoHDMI}"></td>
+            <td th:text="${solicitud.funcionaPuertoVGA}"></td>
+            <td th:text="${solicitud.observacionPuertoVGA}"></td>
+            <td th:text="${solicitud.funcionaIndicadoresLuminosos}"></td>
+            <td th:text="${solicitud.observacionIndicadoresLuminosos}"></td>
+            <td th:text="${solicitud.funcionaSalidaAudio}"></td>
+            <td th:text="${solicitud.observacionSalidaAudio}"></td>
+            <td th:text="${solicitud.funcionaWIFI}"></td>
+            <td th:text="${solicitud.observacionWIFI}"></td>
+            <td th:text="${solicitud.mantenimiento}"></td>
+            <td th:text="${solicitud.revisado}"></td>
+            <td th:text="${solicitud.cargoRevisado}"></td>
+            <td th:text="${solicitud.recibido}"></td>
+            <td th:text="${solicitud.cargoRecibido}"></td>
+            <td>
+                <!--<a th:href="@{/persona/editar/} + ${persona.id}" class="btn btn-success">Editar</a>-->
+                <a th:href="@{/persona/eliminar/} + ${persona.id}" class="btn btn-danger">Eliminar</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

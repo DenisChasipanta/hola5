@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOLICITUD DE QUIPOS TIC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    <div class="container-fluid">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a style="color: red" class="nav-link" href="/solicitudes">REGRESAR</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container mt-3">
+    <h2>Stacked form</h2>
+    <form th:action="@{/solicitud/form}" method="post" th:object="${solicitudes}">
+        <div class="mb-3 mt-3">
+            <label >NÚMERO DE CÓDIGO:</label>
+            <input type="number" class="form-control"  placeholder="Enter ID" th:field="*{numeroCodigo}" readonly="readonly">
+        </div>
+        <div class="mb-3">
+            <label >CÓDIGO:</label>
+            <input type="text" class="form-control" placeholder="Enter codigo" th:field="*{codigo}">
+        </div>
+        <div class="mb-3">
+            <label >NOMBRE DEL FUNCIONARIO:</label>
+            <select class="form-control" th:field="*{persona}">
+                <option th:each="persona : ${personas}" th:value="${persona.nombre}" th:text="${persona.nombre}"></option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label >DIRECCION/UNIDAD:</label>
+            <input type="text" class="form-control" placeholder="Enter direccion/unidad" th:field="*{direccion}">
+        </div>
+
+        <div class="mb-3">
+            <label >E-MAIL:</label>
+            <input type="email" class="form-control" placeholder="Enter email" th:field="*{email}">
+        </div>
+
+        <div class="mb-3">
+            <label >TIPO DE REGISTRO:</label>
+            <input type="text" class="form-control" placeholder="Enter tipo de registro" th:field="*{tipoRegistro}">
+        </div>
+
+        <div class="mb-3">
+            <label >FECHA:</label>
+            <input type="date" class="form-control" placeholder="Enter fecha" th:field="*{fecha}">
+        </div>
+
+        <div class="mb-3">
+            <label >TIPO DE EQUIPO:</label>
+            <input type="text" class="form-control" placeholder="Enter tipo de equipo" th:field="*{tipoEquipo}">
+        </div>
+
+        <div class="mb-3">
+            <label >SISTEMA OPERATIVO:</label>
+            <input type="text" class="form-control" placeholder="Enter sistema operativo" th:field="*{sistemaOperativo}">
+        </div>
+
+        <div class="mb-3">
+            <label >PROCESADOR:</label>
+            <input type="text" class="form-control" placeholder="Enter procesador" th:field="*{procesador}">
+        </div>
+
+        <div class="mb-3">
+            <label >TIPO DE DISCO:</label>
+            <input type="text" class="form-control" placeholder="Enter tipo de disco" th:field="*{tipoDisco}">
+        </div>
+
+        <div class="mb-3">
+            <label >RAM:</label>
+            <input type="text" class="form-control" placeholder="Enter ram" th:field="*{ram}">
+        </div>
+
+        <div class="mb-3">
+            <label >CAPACIDAD DE DISCO:</label>
+            <input type="text" class="form-control" placeholder="Enter capacidad de disco" th:field="*{capacidadDisco}">
+        </div>
+
+        <div class="mb-3">
+            <label >MARCA DE DISCO DURO/SSD:</label>
+            <input type="text" class="form-control" placeholder="Enter marca de dico duro" th:field="*{marcaDiscoDuro}">
+        </div>
+        <div class="mb-3">
+            <label >CÓDIGO:</label>
+            <input type="text" class="form-control" placeholder="Enter codigo" th:field="*{codigo}">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>
